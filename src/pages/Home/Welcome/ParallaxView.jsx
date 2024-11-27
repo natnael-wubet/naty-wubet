@@ -11,7 +11,7 @@ export default function ParallaxView({ WelcomeText }) {
 	const factor = 1.8;
 	return (
 		<div className={"w-full h-full"}>
-			<Parallax pages={3}>
+			<Parallax pages={2}>
 				<ParallaxLayer
 					offset={0}
 					speed={0.1}
@@ -50,7 +50,7 @@ export default function ParallaxView({ WelcomeText }) {
 
 				<ParallaxLayer
 					offset={0}
-					speed={0.75}
+					speed={0.85}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer2})`,
@@ -60,7 +60,7 @@ export default function ParallaxView({ WelcomeText }) {
 				></ParallaxLayer>
 				<ParallaxLayer
 					offset={0}
-					speed={0.8}
+					speed={0.99}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer1})`,
@@ -71,12 +71,18 @@ export default function ParallaxView({ WelcomeText }) {
 
 				<ParallaxLayer
 					offset={1}
+					speed={0.99}
+					factor={factor}
+					className="h-screen w-full h-[70vh] bg-gradient-to-b from-blue-200 to-purple-500"
+				></ParallaxLayer>
+				<ParallaxLayer
+					offset={1}
 
 					factor={factor}
 					speed={2.2} // Adjust speed for desired effect
 					style={{
-						backgroundColor: "rgba(255, 255, 255)", // Semi-transparent white overlay
-
+						backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent white overlay
+						opacity: 0.8, // Adjust opacity as needed
 					}}
 				>
 					{/* You can add content here if needed */}
