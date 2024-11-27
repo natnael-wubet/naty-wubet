@@ -10,13 +10,13 @@ export default function Pagebuttons() {
 			<div className="flex space-x-2">
 				<Link
 					to="/"
-					className="text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 text-sm rounded transition duration-300"
+					className="text-white bg-transparent hover:bg-blue-500 px-3 py-1 text-sm rounded transition duration-300"
 				>
 					Home
 				</Link>
 				<Link
 					to="/about"
-					className="text-white bg-blue-500 hover:bg-blue-600 px-3 py-1 text-sm rounded transition duration-300"
+					className="text-white bg-transparent hover:bg-blue-500 px-3 py-1 text-sm rounded transition duration-300"
 				>
 					About
 				</Link>

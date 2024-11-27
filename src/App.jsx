@@ -13,7 +13,7 @@ const App = () => {
 		<div className="app-container">
 			<Router>
 				<Navbar />
-				<div className="h-screen bg-gradient-to-b from-blue-500 to-purple-500">
+<div className="h-screen bg-gradient-to-b from-blue-900 to-purple-500">
 					<Routes>
 						<Route path="/" exact element={<Home />} />
 						<Route path="/about" element={<About />} />
