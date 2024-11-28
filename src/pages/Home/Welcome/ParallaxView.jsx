@@ -7,7 +7,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { useState } from "react";
 import styles from "./Welcome.module.css";
 
-export default function ParallaxView({ WelcomeText }) {
+export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 	const factor = 1.8;
 	return (
 		<div className={"w-full h-full"}>
@@ -24,7 +24,12 @@ export default function ParallaxView({ WelcomeText }) {
 				></ParallaxLayer>
 
 				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
+				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
 					<WelcomeText />
+				</ParallaxLayer>
+				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
+					<WelcomeCard />
+				</ParallaxLayer>
 				</ParallaxLayer>
 				<ParallaxLayer
 					offset={0}
@@ -59,7 +64,7 @@ export default function ParallaxView({ WelcomeText }) {
 					}}
 				></ParallaxLayer>
 				<ParallaxLayer
-					offset={0}
+					offset={0.3}
 					speed={0.99}
 					factor={factor}
 					style={{
@@ -86,7 +91,7 @@ export default function ParallaxView({ WelcomeText }) {
 					}}
 				>
 					{/* You can add content here if needed */}
-					<div className="flex items-center justify-center h-full">
+					<div className="flex cursor-none items-center justify-center h-full">
 						<h1 className="text-3xl font-bold text-black">
 							Welcome to My Portfolio
 						</h1>
