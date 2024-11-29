@@ -1,7 +1,7 @@
 const abs = (x) => {
 	return (x < 0) * -x + (x > 0) * x;
 };
-import {statue} from "../../assets/statue.glb";
+// import {statue} from "../../assets/statue.glb";
 const myP5Sketch = (p) => {
 	p.preload = () => {
 		myModel = p.loadModel(
@@ -16,7 +16,7 @@ const myP5Sketch = (p) => {
 		);
 	};
 	p.setup = () => {
-		p.createCanvas(window.innerWidth / 2, window.innerHeight);
+		p.createCanvas(window.innerWidth / 2, window.innerHeight,WEBGL);
 		width_ = window.innerWidth / 2;
 
 		height_ = window.innerHeight / 2;
