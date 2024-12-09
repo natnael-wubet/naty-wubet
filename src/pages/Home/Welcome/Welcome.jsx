@@ -11,7 +11,7 @@ export default function Welcome() {
 		return (
 			<>
 				<div className="flex h-screen items-center w-1/2 justify-center ">
-					<div className="  bg-white ml-4 top:2 dark:bg-gray-900 bg-gray rounded-lg shadow-lg overflow-hidden">
+					<div className="bg-gray-800 shadow-lg mt-12 pb-10 rounded-lg p-2 max-w-lg relative">
 						<div className="m-0 pl-4 pr-4 pb-6">
 							<h2 className="flex text-xl font-bold text-gray-800">
 								<div className="relative p-1 pt-2">
@@ -20,19 +20,15 @@ export default function Welcome() {
 									</h1>
 								</div>
 							</h2>
-							<p className="mt-2 text-gray-600">
+							<p className="text-gray-300 mb-6">
 								I am a versatile software, website, and application developer
-								with 11 years of experience across various technologies and 5 years experiance in work. i am self taught but also took cources afterwards to gain more knowledge. Lets dive in to know me more ↓ 
+								with 11 years of experience across various technologies and 5
+								years experiance in work. i am self taught but also took cources
+								afterwards to gain more knowledge. Lets dive in to know me more
+								↓
 							</p>
 						</div>
-						<div className="flex justify-between p-4 border-t">
-							<button className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
-								Explore
-							</button>
-							<button className="px-4 py-2 text-gray-700 bg-gray-200 rounded hover:bg-gray-300">
-								Learn More
-							</button>
-						</div>
+						<Scrollanim/>
 					</div>
 				</div>
 			</>
@@ -45,4 +41,23 @@ export default function Welcome() {
 			</div>
 		</>
 	);
+}
+const Scrollanim = () => {
+return  <div className="text-center relative"><div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+                    {/* Additional Arrow Icon for Better Scroll Indication */}
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6 text-gray-400 animate-bounce mt-2" // Adjust size and spacing
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                    >
+                        <path
+                            fillRule="evenodd"
+                            d="M5.293 9.293a1 1 0 011.414 0L10 12.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                            clipRule="evenodd"
+                        />
+                    </svg>
+                </div>
+                </div>
+
 }
