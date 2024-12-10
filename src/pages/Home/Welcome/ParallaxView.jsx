@@ -14,7 +14,7 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 			<Parallax pages={2}>
 				<ParallaxLayer
 					offset={0}
-					speed={0.1}
+					speed={0}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer5})`,
@@ -23,17 +23,15 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 					}}
 				></ParallaxLayer>
 
-				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
-				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
+				<ParallaxLayer offset={0} speed={0.001} factor={factor}>
+
+				<ParallaxLayer offset={0} speed={0} factor={factor}>
 					<WelcomeText />
-				</ParallaxLayer>
-				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
-					<WelcomeCard />
 				</ParallaxLayer>
 				</ParallaxLayer>
 				<ParallaxLayer
 					offset={0}
-					speed={0.4}
+					speed={0.5}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer4})`,
@@ -42,9 +40,16 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 					}}
 				></ParallaxLayer>
 
+				<ParallaxLayer offset={0} speed={0.001} factor={factor}>
+
+				<ParallaxLayer offset={0} speed={0.005} factor={factor}>
+					<WelcomeCard />
+				</ParallaxLayer>
+				</ParallaxLayer>
+
 				<ParallaxLayer
 					offset={0}
-					speed={0.6}
+					speed={0.8}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer3})`,
@@ -55,7 +60,7 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 
 				<ParallaxLayer
 					offset={0}
-					speed={0.85}
+					speed={0.9}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer2})`,
@@ -65,7 +70,7 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 				></ParallaxLayer>
 				<ParallaxLayer
 					offset={0.3}
-					speed={0.99}
+					speed={0.8}
 					factor={factor}
 					style={{
 						backgroundImage: `url(${layer1})`,
@@ -76,7 +81,7 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 
 				<ParallaxLayer
 					offset={1}
-					speed={0.99}
+					speed={1.39}
 					factor={factor}
 					className="h-screen w-full h-[70vh] bg-gradient-to-b from-blue-200 to-purple-500"
 				></ParallaxLayer>
@@ -84,7 +89,8 @@ export default function ParallaxView({ WelcomeText ,WelcomeCard}) {
 					offset={1}
 
 					factor={factor}
-					speed={2.2} // Adjust speed for desired effect
+					speed={2.8} // Adjust speed for desired effect
+
 					style={{
 						backgroundColor: "rgba(255, 255, 255, 0.7)", // Semi-transparent white overlay
 						opacity: 0.8, // Adjust opacity as needed
