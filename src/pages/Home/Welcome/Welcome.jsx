@@ -1,4 +1,5 @@
 import styles from "./Welcome.module.css";
+import BioMe from "../BioMe";
 import { useState, useEffect } from "react";
 
 import React from "react";
@@ -37,7 +38,8 @@ export default function Welcome() {
 	return (
 		<>
 			<div className={styles.parent}>
-				<ParallaxView WelcomeText={welcomeText} WelcomeCard={Statue} />
+				<ParallaxView WelcomeText={welcomeText} WelcomeCard={Statue} Bio={BioMe} />
+				
 			</div>
 		</>
 	);
